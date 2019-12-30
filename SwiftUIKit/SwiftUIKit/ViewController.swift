@@ -21,11 +21,19 @@ class ViewController: UIViewController {
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
         startNewRound()
-        targetValue = Int.random(in: 1...100)
     }
     
     @IBAction func showAlert(){
-        let message = "The value of the slider is now: \(currentValue)" + "\nThe target value is: \(targetValue)"
+        var difference: Int
+        if currentValue > targetValue {
+            difference = currentValue - targetValue
+        }else if targetValue > currentValue {
+            difference = targetValue - currentValue
+        }else {
+            difference = 0
+        }
+        
+        let message = "The value of the slider is now: \(currentValue)" + "\nThe target value is: \(targetValue)" + "\nThe diffenrece is: \(difference)"
         
         let alert = UIAlertController(title: "Hello World", message: message, preferredStyle: .alert)
 
@@ -34,6 +42,8 @@ class ViewController: UIViewController {
         alert.addAction(action)
 
         present(alert, animated: true, completion: nil)
+        
+        startNewRound()
     }
     
     @IBAction func sliderMoved(_ slider: UISlider) {
