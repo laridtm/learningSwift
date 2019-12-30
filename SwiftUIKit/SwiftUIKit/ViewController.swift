@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var currentValue: Int = 1
+    var currentValue: Int = 50
     var targetValue: Int = 0
     
     @IBOutlet weak var slider: UISlider!
@@ -36,14 +36,14 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    @IBAction func sliderMoved(slider: UISlider){
+    @IBAction func sliderMoved(_ slider: UISlider) {
         let roundedValue = slider.value.rounded()
-        currentValue = Int(roundedValue)
+            currentValue = Int(roundedValue)
     }
- 
+    
     func startNewRound() {
         targetValue = Int.random(in: 1...100)
-        currentValue = 1
+        currentValue = 50
         slider.value = Float(currentValue)
         updateLabels()
     }
