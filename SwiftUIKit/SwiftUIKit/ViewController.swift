@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var roundLabel: UILabel!
+    @IBAction func startOver(_ sender: Any) {
+        score = 0
+        round = 1
+        startNewRound()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

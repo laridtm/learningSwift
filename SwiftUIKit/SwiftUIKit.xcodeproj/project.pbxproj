@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154D8D6C23BE32D70001900F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154D8D6B23BE32D70001900F /* AboutViewController.swift */; };
+		154D8D6E23BE37480001900F /* AutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154D8D6D23BE37480001900F /* AutorViewController.swift */; };
 		155E9F4423B52C4E007303C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E9F4323B52C4E007303C7 /* AppDelegate.swift */; };
 		155E9F4623B52C4E007303C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E9F4523B52C4E007303C7 /* SceneDelegate.swift */; };
 		155E9F4823B52C4E007303C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E9F4723B52C4E007303C7 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		154D8D6B23BE32D70001900F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		154D8D6D23BE37480001900F /* AutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorViewController.swift; sourceTree = "<group>"; };
 		155E9F4023B52C4E007303C7 /* SwiftUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		155E9F4323B52C4E007303C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		155E9F4523B52C4E007303C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,9 +107,11 @@
 				155E9F4523B52C4E007303C7 /* SceneDelegate.swift */,
 				155E9F4723B52C4E007303C7 /* ViewController.swift */,
 				155E9F4923B52C4E007303C7 /* Main.storyboard */,
+				154D8D6B23BE32D70001900F /* AboutViewController.swift */,
 				155E9F4C23B52C51007303C7 /* Assets.xcassets */,
 				155E9F4E23B52C51007303C7 /* LaunchScreen.storyboard */,
 				155E9F5123B52C51007303C7 /* Info.plist */,
+				154D8D6D23BE37480001900F /* AutorViewController.swift */,
 			);
 			path = SwiftUIKit;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			files = (
 				155E9F4823B52C4E007303C7 /* ViewController.swift in Sources */,
 				155E9F4423B52C4E007303C7 /* AppDelegate.swift in Sources */,
+				154D8D6C23BE32D70001900F /* AboutViewController.swift in Sources */,
 				155E9F4623B52C4E007303C7 /* SceneDelegate.swift in Sources */,
+				154D8D6E23BE37480001900F /* AutorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
