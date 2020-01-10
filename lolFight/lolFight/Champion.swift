@@ -13,6 +13,8 @@ protocol Champion {
     var alive: Bool { get set }
     var classe: String { get set }
     var base: Bool { get set }
+    var kills: Int { get set }
+    var deaths: Int { get set }
     
     func die()
     func toLive()
