@@ -13,9 +13,10 @@
 		15DD8B4F23C8A82E00A51B2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DD8B4D23C8A82E00A51B2B /* Main.storyboard */; };
 		15DD8B5123C8A83300A51B2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15DD8B5023C8A83300A51B2B /* Assets.xcassets */; };
 		15DD8B5423C8A83300A51B2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15DD8B5223C8A83300A51B2B /* LaunchScreen.storyboard */; };
-		15DD8B5F23C8A83300A51B2B /* lolFightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD8B5E23C8A83300A51B2B /* lolFightTests.swift */; };
 		15DD8B6A23C8A83300A51B2B /* lolFightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD8B6923C8A83300A51B2B /* lolFightUITests.swift */; };
 		15DD8B7823C8A9FD00A51B2B /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD8B7723C8A9FD00A51B2B /* Champion.swift */; };
+		15DD8B7A23C8E19400A51B2B /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD8B7923C8E19400A51B2B /* Mage.swift */; };
+		15DD8B7C23C8E43900A51B2B /* lolFightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD8B5E23C8A83300A51B2B /* lolFightTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		15DD8B6923C8A83300A51B2B /* lolFightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lolFightUITests.swift; sourceTree = "<group>"; };
 		15DD8B6B23C8A83300A51B2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15DD8B7723C8A9FD00A51B2B /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		15DD8B7923C8E19400A51B2B /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mage.swift; path = ../../../Mage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				15DD8B5223C8A83300A51B2B /* LaunchScreen.storyboard */,
 				15DD8B5523C8A83300A51B2B /* Info.plist */,
 				15DD8B7723C8A9FD00A51B2B /* Champion.swift */,
+				15DD8B7923C8E19400A51B2B /* Mage.swift */,
 			);
 			path = lolFight;
 			sourceTree = "<group>";
@@ -116,7 +119,6 @@
 		15DD8B5D23C8A83300A51B2B /* lolFightTests */ = {
 			isa = PBXGroup;
 			children = (
-				15DD8B5E23C8A83300A51B2B /* lolFightTests.swift */,
 				15DD8B6023C8A83300A51B2B /* Info.plist */,
 			);
 			path = lolFightTests;
@@ -125,6 +127,7 @@
 		15DD8B6823C8A83300A51B2B /* lolFightUITests */ = {
 			isa = PBXGroup;
 			children = (
+				15DD8B5E23C8A83300A51B2B /* lolFightTests.swift */,
 				15DD8B6923C8A83300A51B2B /* lolFightUITests.swift */,
 				15DD8B6B23C8A83300A51B2B /* Info.plist */,
 			);
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DD8B7A23C8E19400A51B2B /* Mage.swift in Sources */,
 				15DD8B7823C8A9FD00A51B2B /* Champion.swift in Sources */,
 				15DD8B4C23C8A82E00A51B2B /* ViewController.swift in Sources */,
 				15DD8B4823C8A82E00A51B2B /* AppDelegate.swift in Sources */,
@@ -273,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15DD8B5F23C8A83300A51B2B /* lolFightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15DD8B7C23C8E43900A51B2B /* lolFightTests.swift in Sources */,
 				15DD8B6A23C8A83300A51B2B /* lolFightUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
