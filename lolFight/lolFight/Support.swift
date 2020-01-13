@@ -28,11 +28,18 @@ class Support: Champion {
     }
     
     func die() {
-        <#code#>
+        alive = false
+        base = true
+        deaths += 1
     }
     
     func toLive() {
-        <#code#>
+        base = false
+        alive = true
+    }
+    
+    func kill() {
+        kills += 1
     }
     
     func fight() {

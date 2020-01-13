@@ -30,12 +30,17 @@ class Mage: Champion {
     func die() {
         alive = false
         base = true
+        deaths += 1
     }
     
     func toLive() {
         base = false
         alive = true
         mana = 100
+    }
+    
+    func kill() {
+        kills += 1 
     }
     
     func fight() {
