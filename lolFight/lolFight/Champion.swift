@@ -19,4 +19,5 @@ protocol Champion {
     func die()
     func toLive()
     func fight()
+    func kill()
 }
