@@ -43,7 +43,7 @@ class Shooter: Champion {
     }
     
     func fight() {
-        <#code#>
+        
     }
     
     

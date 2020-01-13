@@ -43,7 +43,7 @@ class Support: Champion {
     }
     
     func fight() {
-        <#code#>
+        
     }
     
     

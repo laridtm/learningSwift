@@ -43,7 +43,7 @@ class Tank: Champion {
     }
     
     func fight() {
-        <#code#>
+        
     }
     
     
