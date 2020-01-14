@@ -22,8 +22,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let fight = Fight(attacking: Garen, attacked: Lux)
-        fight.fight()
+        let fight1 = Fight(attacking: Lux, attacked: missFortune)
+        fight1.fight()
+        
+        
     }
 
     

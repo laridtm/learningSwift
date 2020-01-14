@@ -11,16 +11,14 @@ import Foundation
 class Shooter: Champion {
     var name: String
     var alive: Bool
-    var classe: String
     var base: Bool
     var kills: Int
     var deaths: Int
     var ultimate: Bool
     
-    init(name: String, alive: Bool, classe: String, base: Bool, kills: Int, deaths: Int, ultimate: Bool) {
+    init(name: String, alive: Bool, base: Bool, kills: Int, deaths: Int, ultimate: Bool) {
         self.name = name
         self.alive = alive
-        self.classe = classe
         self.base = base
         self.kills = kills
         self.deaths = deaths

@@ -11,16 +11,14 @@ import Foundation
 class Support: Champion {
     var name: String
     var alive: Bool
-    var classe: String
     var base: Bool
     var kills: Int
     var deaths: Int
     var shield: Bool
     
-    init(name: String, alive: Bool, classe: String, base: Bool, kills: Int, deaths: Int, shield: Bool) {
+    init(name: String, alive: Bool, base: Bool, kills: Int, deaths: Int, shield: Bool) {
         self.name = name
         self.alive = alive
-        self.classe = classe
         self.base = base
         self.kills = kills
         self.deaths = deaths
