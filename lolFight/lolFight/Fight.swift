@@ -17,6 +17,8 @@ class Fight {
     var shooter: Shooter
     var support: Support
     
+    
+    
     init( attacking: Champion, attacked: Champion, mage: Mage, tank: Tank, shooter: Shooter, support: Support ) {
         self.attacking = attacking
         self.attacked = attacked
@@ -27,6 +29,7 @@ class Fight {
     }
     
     func turnType() {
+         // devolve o tipo da variavel
         let attackedType = type(of: attacked)
         let attackingType = type(of: attacking)
         
@@ -50,13 +53,13 @@ class Fight {
             support = attacked as! Support
         }
     }
+    
     func fight() {
-        // devolve o tipo da variavel
+        turnType()
         let attackedType = type(of: attacked)
         let attackingType = type(of: attacking)
         
         if (attackingType == Tank.self && attackedType == Mage.self) || (attackingType == Mage.self && attackedType == Tank.self) {
-            turnType()
             if mage.mana > 40 && tank.armor == false {
                 mage.kill()
                 tank.die()
@@ -65,7 +68,6 @@ class Fight {
                 tank.kill()
             }
         } else if (attackingType == Tank.self && attackedType == Shooter.self) || (attackingType == Shooter.self && attackedType == Tank.self) {
-            turnType()
             if tank.armor == true {
                 tank.kill()
                 shooter.die()
@@ -74,7 +76,6 @@ class Fight {
                 shooter.kill()
             }
         } else if (attackingType == Support.self && attackedType == Tank.self) || (attackingType == Tank.self && attackedType == Support.self) {
-            turnType()
             if support.shield && tank.armor == false {
                 support.kill()
                 tank.die()
@@ -83,18 +84,29 @@ class Fight {
                 tank.kill()
             }
         } else if (attackingType == Mage.self && attackedType == Shooter.self) || (attackingType == Shooter.self && attackedType == Mage.self) {
-            
-        }
-        
-        
-        
-        
-        if attackingType == Tank.self {
-            let tank = attacking as! Tank
-            if tank.armor{
-                attackedType
+            if shooter.ultimate {
+                shooter.kill()
+                mage.die()
+            } else {
+                shooter.die()
+                mage.kill()
             }
-            
+        } else if (attackingType == Mage.self && attackedType == Support.self) || (attackingType == Support.self && attackedType == Mage.self) {
+            if support.shield == false {
+                mage.kill()
+                support.die()
+            } else {
+                mage.die()
+                support.kill()
+            }
+        } else if (attackingType == Shooter.self && attackedType == Support.self) || (attackingType == Support.self && attackedType == Shooter.self) {
+            if shooter.ultimate {
+                shooter.kill()
+                support.die()
+            } else {
+                shooter.die()
+                support.kill()
+            }
         }
     }
 }
