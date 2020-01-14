@@ -10,20 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let Garen = Tank(name: "Garen", alive: true, classe: "Tank", base: true, kills: 0, deaths: 0, armor: false)
+    let garen = Tank(name: "Garen", alive: true, base: true, kills: 0, deaths: 0, armor: false)
     
-    let Lux = Mage(name: "Lux", alive: true, classe: "Mage", base: true, kills: 0, deaths: 0, mana: 100)
+    let lux = Mage(name: "Lux", alive: true, base: true, kills: 0, deaths: 0, mana: 100)
     
-    let missFortune = Shooter(name: "Miss Fortune", alive: true, classe: "Shooter", base: true, kills: 0, deaths: 0, ultimate: false)
+    let missFortune = Shooter(name: "Miss Fortune", alive: true, base: true, kills: 0, deaths: 0, ultimate: false)
     
-    let tresh = Support(name: "Tresh", alive: true, classe: "Support", base: true, kills: 0, deaths: 0, shield: false)
+    let tresh = Support(name: "Tresh", alive: true, base: true, kills: 0, deaths: 0, shield: false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let fight1 = Fight(attacking: Lux, attacked: missFortune)
+        let fight1 = Fight(attacking: lux, attacked: missFortune) //vitoria lux
         fight1.fight()
+        
+        let fight2 = Fight(attacking: tresh, attacked: lux) //vitoria lux
+        fight2.fight()
+        
+        let fight3 = Fight(attacking: missFortune, attacked: garen) //vitoria miss
+        fight3.fight()
         
         
     }
