@@ -13,6 +13,7 @@ class Tank: Champion {
     var life: Int
     var kills: Int
     var deaths: Int
+    var damage: Int = 0
     var attack: Int = 40
     var armor: Int = 60
     

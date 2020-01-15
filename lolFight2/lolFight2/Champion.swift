@@ -13,7 +13,9 @@ protocol Champion {
     var life: Int {get set}
     var kills: Int {get set}
     var deaths: Int {get set}
+    var damage: Int {get set}
     
+    func attack(champion2: Champion)
     func defend() -> Int
     func history()
 }

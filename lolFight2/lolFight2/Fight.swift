@@ -9,42 +9,42 @@
 import Foundation
 
 class Fight {
-    var attacking: Champion
-    var attacked: Champion
+    var champion1: Champion
+    var champion2: Champion
     var damage: Int = 0
     
-    init(attacking: Champion, attacked: Champion) {
-        self.attacking = attacking
-        self.attacked = attacked
+    init(champion1: Champion, champion2: Champion) {
+        self.champion1 = champion1
+        self.champion2 = champion2
     }
     
-    func fight() {
+    func attack() {
         let random = Int.random(in: 1...50)
+        let champion1Type = type(of: champion1)
+        
         print(random)
         
-        let attackingType = type(of: attacking)
-        
-        if attackingType == Mage.self {
-            let mage = attacking as! Mage
+        if champion1Type == Mage.self {
+            let mage = champion1 as! Mage
             damage = random + mage.spell
-            attacked.life -= damage - attacked.defend()
+            champion2.life -= damage - champion2.defend()
             
-        } else if attackingType == Tank.self {
-            let tank = attacking as! Tank
+        } else if champion1Type == Tank.self {
+            let tank = champion1 as! Tank
             damage = random + tank.attack
-            attacked.life -= damage - attacked.defend()
+            champion2.life -= damage - champion2.defend()
         }
-        
-        if attacking.life > attacked.life {
-            attacking.kills += 1
-            attacked.deaths += 1
-            print("Victory: \(attacking.name) \nDefeat: \(attacked.name)")
-            print("C1 life: \(attacking.life), C2 life \(attacked.life)")
-       } else {
-            attacked.kills += 1
-            attacked.deaths += 1
-            print("Victory: \(attacking.name) \nDefeat: \(attacked.name)")
-            print("C1 life: \(attacking.life), C2 life \(attacked.life)")
-       }
     }
+    
+//    if champion1.life > champion2.life {
+//         champion1.kills += 1
+//         champion2.deaths += 1
+//         print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
+//         print("C1 life: \(champion1.life), C2 life \(champion2.life)")
+//    } else {
+//         champion2.kills += 1
+//         champion2.deaths += 1
+//         print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
+//         print("C1 life: \(champion1.life), C2 life \(champion2.life)")
+//    }
 }
