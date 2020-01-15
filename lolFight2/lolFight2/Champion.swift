@@ -11,13 +11,9 @@ import Foundation
 protocol Champion {
     var name: String {get set}
     var life: Int {get set}
-    var kill: Int {get set}
-    var die: Int {get set}
+    var kills: Int {get set}
+    var deaths: Int {get set}
     
     func defend() -> Int
-    
-    
-    //func attack(attacked: Champion)
-    //func random() -> Int
-    
+    func history()
 }

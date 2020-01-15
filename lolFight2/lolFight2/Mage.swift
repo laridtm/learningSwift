@@ -11,29 +11,24 @@ import Foundation
 class Mage: Champion {
     var name: String
     var life: Int
-    var kill: Int
-    var die: Int
+    var kills: Int
+    var deaths: Int
     var spell: Int = 70
     var defense: Int = 30
     
-    init(name: String, life: Int, kill: Int, die: Int) {
+    init(name: String, life: Int, kills: Int, deaths: Int) {
         self.name = name
         self.life = life
-        self.kill = kill
-        self.die = die
-    }
-    
-    func random() -> Int {
-        var random = Int.random(in: 1...100)
-        return random
-    }
-
-    func attack(random: Int) {
-        let damage = random + spell
+        self.kills = kills
+        self.deaths = deaths
     }
     
     func defend() -> Int {
         return defense
+    }
+    
+    func history() {
+        print("Campeão: \(name), abates: \(kills), mortes: \(deaths).")
     }
     
 }

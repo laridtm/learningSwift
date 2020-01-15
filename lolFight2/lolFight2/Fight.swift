@@ -19,10 +19,10 @@ class Fight {
     }
     
     func fight() {
-        let random = Int.random(in: 1...100)
+        let random = Int.random(in: 1...50)
+        print(random)
         
         let attackingType = type(of: attacking)
-        let attackedType = type(of: attacked)
         
         if attackingType == Mage.self {
             let mage = attacking as! Mage
@@ -35,17 +35,16 @@ class Fight {
             attacked.life -= damage - attacked.defend()
         }
         
-        if attackedType == Mage.self {
-            let mage = attacked as! Mage
-            
-        } else if attackedType == Tank.self {
-            let tank = attacked as! Tank
-        }
-        
-        
+        if attacking.life > attacked.life {
+            attacking.kills += 1
+            attacked.deaths += 1
+            print("Victory: \(attacking.name) \nDefeat: \(attacked.name)")
+            print("C1 life: \(attacking.life), C2 life \(attacked.life)")
+       } else {
+            attacked.kills += 1
+            attacked.deaths += 1
+            print("Victory: \(attacking.name) \nDefeat: \(attacked.name)")
+            print("C1 life: \(attacking.life), C2 life \(attacked.life)")
+       }
     }
-    
-//    func fight() {
-//        attacking.attack(random: attta)
-//    }
 }

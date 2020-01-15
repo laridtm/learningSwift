@@ -11,31 +11,23 @@ import Foundation
 class Tank: Champion {
     var name: String
     var life: Int
-    var kill: Int
-    var die: Int
+    var kills: Int
+    var deaths: Int
     var attack: Int = 40
     var armor: Int = 60
     
-    init(name: String, life: Int, kill: Int, die: Int) {
+    init(name: String, life: Int, kills: Int, deaths: Int) {
         self.name = name
         self.life = life
-        self.kill = kill
-        self.die = die
+        self.kills = kills
+        self.deaths = deaths
     }
     
     func defend() -> Int {
         return armor
     }
     
-//    func random() -> Int {
-//        var random = Int.random(in: 1...100)
-//        return random
-//    }
-
-//    func attack(attacked: Champion) {
-//        var random = Int.random(in: 1...100)
-//        let damage = random + attack
-//        attacked.life -= (damage - attacked.armor)
-//    }
-    
+    func history() {
+        print("Campeão: \(name), abates: \(kills), mortes: \(deaths).")
+    }
 }
