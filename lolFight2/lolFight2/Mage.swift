@@ -27,21 +27,21 @@ class Mage: Champion {
     func attack(champion2: Champion) {
         let random = Int.random(in: 1...50)
         let champion2Type = type(of: champion2)
+        
         damage = random + spell
         
         print(random)
         
         if champion2Type == Mage.self {
             let mage = champion2 as! Mage
-            damage = random + mage.spell
-            life -= damage - champion2.defend()
-            
+            mage.life -= damage - mage.defend()
+
         } else if champion2Type == Tank.self {
             let tank = champion2 as! Tank
-            damage = random + tank.attack
-            life -= damage - champion2.defend()
+            tank.life -= damage - tank.defend()
         }
     }
+    
     func defend() -> Int {
         return defense
     }

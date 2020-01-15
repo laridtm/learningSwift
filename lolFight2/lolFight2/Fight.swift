@@ -18,23 +18,25 @@ class Fight {
         self.champion2 = champion2
     }
     
-    func attack() {
-        let random = Int.random(in: 1...50)
-        let champion1Type = type(of: champion1)
-        
-        print(random)
-        
-        if champion1Type == Mage.self {
-            let mage = champion1 as! Mage
-            damage = random + mage.spell
-            champion2.life -= damage - champion2.defend()
-            
-        } else if champion1Type == Tank.self {
-            let tank = champion1 as! Tank
-            damage = random + tank.attack
-            champion2.life -= damage - champion2.defend()
-        }
-    }
+//    func attack() {
+//        let random = Int.random(in: 1...50)
+//        let champion1Type = type(of: champion1)
+//
+//        print(random)
+//
+//        if champion1Type == Mage.self {
+//            let mage = champion1 as! Mage
+//            damage = random + mage.spell
+//            champion2.life -= damage - champion2.defend()
+//
+//        } else if champion1Type == Tank.self {
+//            let tank = champion1 as! Tank
+//            damage = random + tank.attack
+//            champion2.life -= damage - champion2.defend()
+//        }
+//    }
+    
+    
     
 //    if champion1.life > champion2.life {
 //         champion1.kills += 1
