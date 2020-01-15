@@ -13,8 +13,9 @@ protocol Champion {
     var life: Int {get set}
     var kill: Int {get set}
     var die: Int {get set}
+    var deffense: Int {get set}
     
-    func attack()
-    func deffense()
+    func attack(random: Int)
+    func random() -> Int
     
 }
