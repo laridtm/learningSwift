@@ -1,5 +1,5 @@
 //
-//  Mage.swift
+//  Tank.swift
 //  lolFight2
 //
 //  Created by Larissa Diniz  on 15/01/20.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Mage: Champion {
+class Tank: Champion {
     var name: String
     var life: Int
     var kill: Int
     var die: Int
-    var spell: Int = 70
-    var defense: Int = 30
+    var attack: Int = 40
+    var armor: Int = 60
     
     init(name: String, life: Int, kill: Int, die: Int) {
         self.name = name
@@ -23,17 +23,19 @@ class Mage: Champion {
         self.die = die
     }
     
-    func random() -> Int {
-        var random = Int.random(in: 1...100)
-        return random
-    }
-
-    func attack(random: Int) {
-        let damage = random + spell
+    func defend() -> Int {
+        return armor
     }
     
-    func defend() -> Int {
-        return defense
-    }
+//    func random() -> Int {
+//        var random = Int.random(in: 1...100)
+//        return random
+//    }
+
+//    func attack(attacked: Champion) {
+//        var random = Int.random(in: 1...100)
+//        let damage = random + attack
+//        attacked.life -= (damage - attacked.armor)
+//    }
     
 }

@@ -13,9 +13,11 @@ protocol Champion {
     var life: Int {get set}
     var kill: Int {get set}
     var die: Int {get set}
-    var deffense: Int {get set}
     
-    func attack(random: Int)
-    func random() -> Int
+    func defend() -> Int
+    
+    
+    //func attack(attacked: Champion)
+    //func random() -> Int
     
 }

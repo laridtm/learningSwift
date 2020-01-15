@@ -17,6 +17,8 @@
 		15B4DA5623CF58EC003E6C25 /* lolFight2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA5523CF58EC003E6C25 /* lolFight2UITests.swift */; };
 		15B4DA6423CF592C003E6C25 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6323CF592C003E6C25 /* Champion.swift */; };
 		15B4DA6623CF5AB3003E6C25 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6523CF5AB3003E6C25 /* Mage.swift */; };
+		15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6723CF7FEE003E6C25 /* Tank.swift */; };
+		15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6923CF8111003E6C25 /* Fight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		15B4DA5723CF58EC003E6C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15B4DA6323CF592C003E6C25 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		15B4DA6523CF5AB3003E6C25 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		15B4DA6723CF7FEE003E6C25 /* Tank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
+		15B4DA6923CF8111003E6C25 /* Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				15B4DA4123CF58EC003E6C25 /* Info.plist */,
 				15B4DA6323CF592C003E6C25 /* Champion.swift */,
 				15B4DA6523CF5AB3003E6C25 /* Mage.swift */,
+				15B4DA6723CF7FEE003E6C25 /* Tank.swift */,
+				15B4DA6923CF8111003E6C25 /* Fight.swift */,
 			);
 			path = lolFight2;
 			sourceTree = "<group>";
@@ -266,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B4DA6623CF5AB3003E6C25 /* Mage.swift in Sources */,
+				15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */,
+				15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */,
 				15B4DA6423CF592C003E6C25 /* Champion.swift in Sources */,
 				15B4DA3823CF58EB003E6C25 /* ViewController.swift in Sources */,
 				15B4DA3423CF58EB003E6C25 /* AppDelegate.swift in Sources */,
