@@ -30,8 +30,6 @@ class Mage: Champion {
         
         damage = random + spell
         
-        print(random)
-        
         if champion2Type == Mage.self {
             let mage = champion2 as! Mage
             mage.life -= damage - mage.defend()

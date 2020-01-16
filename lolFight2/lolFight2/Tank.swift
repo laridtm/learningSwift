@@ -24,6 +24,22 @@ class Tank: Champion {
         self.deaths = deaths
     }
     
+    func attack(champion2: Champion) {
+        let random = Int.random(in: 1...50)
+        let champion2Type = type(of: champion2)
+        
+        damage = random + attack
+        
+        if champion2Type == Mage.self {
+            let mage = champion2 as! Mage
+            mage.life -= damage - mage.defend()
+
+        } else if champion2Type == Tank.self {
+            let tank = champion2 as! Tank
+            tank.life -= damage - tank.defend()
+        }
+    }
+    
     func defend() -> Int {
         return armor
     }

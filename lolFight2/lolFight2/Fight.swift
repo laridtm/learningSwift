@@ -18,35 +18,26 @@ class Fight {
         self.champion2 = champion2
     }
     
-//    func attack() {
-//        let random = Int.random(in: 1...50)
-//        let champion1Type = type(of: champion1)
-//
-//        print(random)
-//
-//        if champion1Type == Mage.self {
-//            let mage = champion1 as! Mage
-//            damage = random + mage.spell
-//            champion2.life -= damage - champion2.defend()
-//
-//        } else if champion1Type == Tank.self {
-//            let tank = champion1 as! Tank
-//            damage = random + tank.attack
-//            champion2.life -= damage - champion2.defend()
-//        }
-//    }
+    func fight() {
+        
+        while champion1.life > 0 && champion2.life > 0 {
+            champion1.attack(champion2: champion2)
+            print("Vida \(champion2.name): \(champion2.life)")
+            if champion2.life > 0 {
+                champion2.attack(champion2: champion1)
+                print("Vida \(champion1.name): \(champion1.life) \n")
+            }
+        }
+        
+        if champion1.life > champion2.life {
+             champion1.kills += 1
+             champion2.deaths += 1
+             print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
+        } else {
+             champion2.kills += 1
+             champion2.deaths += 1
+             print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
+        }
+    }
     
-    
-    
-//    if champion1.life > champion2.life {
-//         champion1.kills += 1
-//         champion2.deaths += 1
-//         print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
-//         print("C1 life: \(champion1.life), C2 life \(champion2.life)")
-//    } else {
-//         champion2.kills += 1
-//         champion2.deaths += 1
-//         print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
-//         print("C1 life: \(champion1.life), C2 life \(champion2.life)")
-//    }
 }
