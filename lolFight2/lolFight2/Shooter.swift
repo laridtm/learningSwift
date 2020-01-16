@@ -1,0 +1,55 @@
+//
+//  Shooter.swift
+//  lolFight2
+//
+//  Created by Larissa Diniz  on 16/01/20.
+//  Copyright © 2020 Larissa Diniz . All rights reserved.
+//
+
+import Foundation
+
+class Shooter: Champion {
+    var name: String
+    var life: Int
+    var kills: Int
+    var deaths: Int
+    var damage: Int
+    var ultimate: Int = 95
+    var defense: Int = 30
+    
+    init(name: String, life: Int, kills: Int, deaths: Int, damage: Int, ultimate: Int, defense: Int) {
+        self.name = name
+        self.life = life
+        self.kills = kills
+        self.deaths = deaths
+        self.damage = damage
+        self.ultimate = ultimate
+        self.defense = defense
+    }
+    
+    func attack(champion2: Champion) {
+        let random = Int.random(in: 1...50)
+        let champion2Type = type(of: champion2)
+       
+        damage = random + ultimate
+       
+        if champion2Type == Mage.self {
+            let mage = champion2 as! Mage
+            mage.life -= damage - mage.defend()
+
+        } else if champion2Type == Tank.self {
+            let tank = champion2 as! Tank
+            tank.life -= damage - tank.defend()
+        }
+    }
+    
+    func defend() -> Int {
+        return defense
+    }
+    
+    func history() {
+        print("Campeão: \(name), abates: \(kills), mortes: \(deaths).")
+    }
+    
+    
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159FB7F923D0C0B9008D4126 /* Shooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FB7F823D0C0B9008D4126 /* Shooter.swift */; };
 		15B4DA3423CF58EB003E6C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA3323CF58EB003E6C25 /* AppDelegate.swift */; };
 		15B4DA3623CF58EB003E6C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA3523CF58EB003E6C25 /* SceneDelegate.swift */; };
 		15B4DA3823CF58EB003E6C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA3723CF58EB003E6C25 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		159FB7F823D0C0B9008D4126 /* Shooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shooter.swift; sourceTree = "<group>"; };
 		15B4DA3023CF58EB003E6C25 /* lolFight2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lolFight2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B4DA3323CF58EB003E6C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15B4DA3523CF58EB003E6C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				15B4DA6523CF5AB3003E6C25 /* Mage.swift */,
 				15B4DA6723CF7FEE003E6C25 /* Tank.swift */,
 				15B4DA6923CF8111003E6C25 /* Fight.swift */,
+				159FB7F823D0C0B9008D4126 /* Shooter.swift */,
 			);
 			path = lolFight2;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */,
 				15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */,
 				15B4DA6423CF592C003E6C25 /* Champion.swift in Sources */,
+				159FB7F923D0C0B9008D4126 /* Shooter.swift in Sources */,
 				15B4DA3823CF58EB003E6C25 /* ViewController.swift in Sources */,
 				15B4DA3423CF58EB003E6C25 /* AppDelegate.swift in Sources */,
 				15B4DA3623CF58EB003E6C25 /* SceneDelegate.swift in Sources */,
