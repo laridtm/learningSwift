@@ -37,6 +37,10 @@ class Mage: Champion {
         } else if champion2Type == Tank.self {
             let tank = champion2 as! Tank
             tank.life -= damage - tank.defend()
+            
+        } else if champion2Type == Shooter.self {
+            let shooter = champion2 as! Shooter
+            shooter.life -= damage - shooter.defend()
         }
     }
     

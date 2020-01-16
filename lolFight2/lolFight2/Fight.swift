@@ -32,11 +32,11 @@ class Fight {
         if champion1.life > champion2.life {
              champion1.kills += 1
              champion2.deaths += 1
-             print("\nVictory: \(champion1.name) \nDefeat: \(champion2.name)")
+             print("\nVictory: \(champion1.name) \nDefeat: \(champion2.name)\n")
         } else {
              champion2.kills += 1
              champion2.deaths += 1
-             print("Victory: \(champion1.name) \nDefeat: \(champion2.name)")
+             print("Victory: \(champion2.name) \nDefeat: \(champion1.name)\n")
         }
     }
     

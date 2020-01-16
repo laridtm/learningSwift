@@ -13,18 +13,15 @@ class Shooter: Champion {
     var life: Int
     var kills: Int
     var deaths: Int
-    var damage: Int
+    var damage: Int = 0
     var ultimate: Int = 95
     var defense: Int = 30
     
-    init(name: String, life: Int, kills: Int, deaths: Int, damage: Int, ultimate: Int, defense: Int) {
+    init(name: String, life: Int, kills: Int, deaths: Int) {
         self.name = name
         self.life = life
         self.kills = kills
         self.deaths = deaths
-        self.damage = damage
-        self.ultimate = ultimate
-        self.defense = defense
     }
     
     func attack(champion2: Champion) {
@@ -40,6 +37,10 @@ class Shooter: Champion {
         } else if champion2Type == Tank.self {
             let tank = champion2 as! Tank
             tank.life -= damage - tank.defend()
+            
+        } else if champion2Type == Shooter.self {
+            let shooter = champion2 as! Shooter
+            shooter.life -= damage - shooter.defend()
         }
     }
     

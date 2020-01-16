@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     let lux = Mage(name: "Lux", life: 100, kills: 0, deaths: 0)
     let garen = Tank(name: "Garen", life: 100, kills: 0, deaths: 0)
+    let missFortune = Shooter(name: "Miss Fortune", life: 100, kills: 0, deaths: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,9 @@ class ViewController: UIViewController {
         let fight1 = Fight.init(champion1: lux, champion2: garen)
         fight1.fight()
         
-
+        let fight2 = Fight.init(champion1: missFortune, champion2: garen)
+        fight2.fight()
+        
     }
 
 
