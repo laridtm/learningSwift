@@ -21,10 +21,10 @@ class Fight {
     func fight() {
         
         while champion1.life > 0 && champion2.life > 0 {
-            champion1.attack(champion2: champion2)
+            champion1.attack(champion2: &champion2)
             print("Ataque \(champion1.name) -> \(champion1.damage) - \(champion2.defend()) vida \(champion2.name): \(champion2.life)")
             if champion2.life > 0 {
-                champion2.attack(champion2: champion1)
+                champion2.attack(champion2: &champion1)
                 print("Ataque \(champion2.name) -> \(champion2.damage) - \(champion1.defend()) vida \(champion1.name): \(champion1.life) \n")
             }
         }

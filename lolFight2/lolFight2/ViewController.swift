@@ -21,10 +21,10 @@ class ViewController: UIViewController {
 
         let fight1 = Fight.init(champion1: lux, champion2: garen)
         fight1.fight()
-        
+
         let fight2 = Fight.init(champion1: missFortune, champion2: garen)
         fight2.fight()
-        
+
         let fight3 = Fight.init(champion1: missFortune, champion2: tresh)
         fight3.fight()
         

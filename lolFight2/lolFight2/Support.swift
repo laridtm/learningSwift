@@ -24,28 +24,12 @@ class Support: Champion {
         self.deaths = deaths
     }
     
-    func attack(champion2: Champion) {
-        let random = Int.random(in: 1...50)
-         let champion2Type = type(of: champion2)
+    func attack(champion2: inout Champion) {
+         let random = Int.random(in: 1...50)
         
          damage = random + attack
         
-         if champion2Type == Mage.self {
-             let mage = champion2 as! Mage
-             mage.life -= damage - mage.defend()
-
-         } else if champion2Type == Tank.self {
-             let tank = champion2 as! Tank
-             tank.life -= damage - tank.defend()
-             
-         } else if champion2Type == Shooter.self {
-             let shooter = champion2 as! Shooter
-             shooter.life -= damage - shooter.defend()
-            
-         } else if champion2Type == Support.self {
-            let support = champion2 as! Support
-            support.life -= damage - support.defend()
-        }
+         champion2.life -= damage - champion2.defend()
     }
     
     func defend() -> Int {
