@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		159FB7F923D0C0B9008D4126 /* Shooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FB7F823D0C0B9008D4126 /* Shooter.swift */; };
+		159FB7FB23D0C553008D4126 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159FB7FA23D0C553008D4126 /* Support.swift */; };
+		15B4DA3423CF58EB003E6C25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA3323CF58EB003E6C25 /* AppDelegate.swift */; };
+		15B4DA3623CF58EB003E6C25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA3523CF58EB003E6C25 /* SceneDelegate.swift */; };
+		15B4DA3823CF58EB003E6C25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA3723CF58EB003E6C25 /* ViewController.swift */; };
+		15B4DA3B23CF58EB003E6C25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B4DA3923CF58EB003E6C25 /* Main.storyboard */; };
+		15B4DA3D23CF58EC003E6C25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B4DA3C23CF58EC003E6C25 /* Assets.xcassets */; };
+		15B4DA4023CF58EC003E6C25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B4DA3E23CF58EC003E6C25 /* LaunchScreen.storyboard */; };
+		15B4DA4B23CF58EC003E6C25 /* lolFight2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA4A23CF58EC003E6C25 /* lolFight2Tests.swift */; };
+		15B4DA5623CF58EC003E6C25 /* lolFight2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA5523CF58EC003E6C25 /* lolFight2UITests.swift */; };
+		15B4DA6423CF592C003E6C25 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6323CF592C003E6C25 /* Champion.swift */; };
+		15B4DA6623CF5AB3003E6C25 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6523CF5AB3003E6C25 /* Mage.swift */; };
+		15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6723CF7FEE003E6C25 /* Tank.swift */; };
+		15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6923CF8111003E6C25 /* Fight.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15B4DA4723CF58EC003E6C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15B4DA2823CF58EB003E6C25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B4DA2F23CF58EB003E6C25;
+			remoteInfo = lolFight2;
+		};
+		15B4DA5223CF58EC003E6C25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15B4DA2823CF58EB003E6C25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15B4DA2F23CF58EB003E6C25;
+			remoteInfo = lolFight2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		159FB7F823D0C0B9008D4126 /* Shooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shooter.swift; sourceTree = "<group>"; };
+		159FB7FA23D0C553008D4126 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		15B4DA3023CF58EB003E6C25 /* lolFight2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lolFight2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B4DA3323CF58EB003E6C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15B4DA3523CF58EB003E6C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		15B4DA3723CF58EB003E6C25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15B4DA3A23CF58EB003E6C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15B4DA3C23CF58EC003E6C25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15B4DA3F23CF58EC003E6C25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15B4DA4123CF58EC003E6C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B4DA4623CF58EC003E6C25 /* lolFight2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lolFight2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B4DA4A23CF58EC003E6C25 /* lolFight2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lolFight2Tests.swift; sourceTree = "<group>"; };
+		15B4DA4C23CF58EC003E6C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B4DA5123CF58EC003E6C25 /* lolFight2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lolFight2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B4DA5523CF58EC003E6C25 /* lolFight2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lolFight2UITests.swift; sourceTree = "<group>"; };
+		15B4DA5723CF58EC003E6C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B4DA6323CF592C003E6C25 /* Champion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
+		15B4DA6523CF5AB3003E6C25 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		15B4DA6723CF7FEE003E6C25 /* Tank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
+		15B4DA6923CF8111003E6C25 /* Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fight.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15B4DA2D23CF58EB003E6C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B4DA4323CF58EC003E6C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B4DA4E23CF58EC003E6C25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15B4DA2723CF58EB003E6C25 = {
+			isa = PBXGroup;
+			children = (
+				15B4DA3223CF58EB003E6C25 /* lolFight2 */,
+				15B4DA4923CF58EC003E6C25 /* lolFight2Tests */,
+				15B4DA5423CF58EC003E6C25 /* lolFight2UITests */,
+				15B4DA3123CF58EB003E6C25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15B4DA3123CF58EB003E6C25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15B4DA3023CF58EB003E6C25 /* lolFight2.app */,
+				15B4DA4623CF58EC003E6C25 /* lolFight2Tests.xctest */,
+				15B4DA5123CF58EC003E6C25 /* lolFight2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15B4DA3223CF58EB003E6C25 /* lolFight2 */ = {
+			isa = PBXGroup;
+			children = (
+				15B4DA3323CF58EB003E6C25 /* AppDelegate.swift */,
+				15B4DA3523CF58EB003E6C25 /* SceneDelegate.swift */,
+				15B4DA3723CF58EB003E6C25 /* ViewController.swift */,
+				15B4DA3923CF58EB003E6C25 /* Main.storyboard */,
+				15B4DA3C23CF58EC003E6C25 /* Assets.xcassets */,
+				15B4DA3E23CF58EC003E6C25 /* LaunchScreen.storyboard */,
+				15B4DA4123CF58EC003E6C25 /* Info.plist */,
+				15B4DA6323CF592C003E6C25 /* Champion.swift */,
+				15B4DA6923CF8111003E6C25 /* Fight.swift */,
+				15B4DA6523CF5AB3003E6C25 /* Mage.swift */,
+				15B4DA6723CF7FEE003E6C25 /* Tank.swift */,
+				159FB7F823D0C0B9008D4126 /* Shooter.swift */,
+				159FB7FA23D0C553008D4126 /* Support.swift */,
+			);
+			path = lolFight2;
+			sourceTree = "<group>";
+		};
+		15B4DA4923CF58EC003E6C25 /* lolFight2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				15B4DA4A23CF58EC003E6C25 /* lolFight2Tests.swift */,
+				15B4DA4C23CF58EC003E6C25 /* Info.plist */,
+			);
+			path = lolFight2Tests;
+			sourceTree = "<group>";
+		};
+		15B4DA5423CF58EC003E6C25 /* lolFight2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				15B4DA5523CF58EC003E6C25 /* lolFight2UITests.swift */,
+				15B4DA5723CF58EC003E6C25 /* Info.plist */,
+			);
+			path = lolFight2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15B4DA2F23CF58EB003E6C25 /* lolFight2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B4DA5A23CF58EC003E6C25 /* Build configuration list for PBXNativeTarget "lolFight2" */;
+			buildPhases = (
+				15B4DA2C23CF58EB003E6C25 /* Sources */,
+				15B4DA2D23CF58EB003E6C25 /* Frameworks */,
+				15B4DA2E23CF58EB003E6C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lolFight2;
+			productName = lolFight2;
+			productReference = 15B4DA3023CF58EB003E6C25 /* lolFight2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15B4DA4523CF58EC003E6C25 /* lolFight2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B4DA5D23CF58EC003E6C25 /* Build configuration list for PBXNativeTarget "lolFight2Tests" */;
+			buildPhases = (
+				15B4DA4223CF58EC003E6C25 /* Sources */,
+				15B4DA4323CF58EC003E6C25 /* Frameworks */,
+				15B4DA4423CF58EC003E6C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15B4DA4823CF58EC003E6C25 /* PBXTargetDependency */,
+			);
+			name = lolFight2Tests;
+			productName = lolFight2Tests;
+			productReference = 15B4DA4623CF58EC003E6C25 /* lolFight2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15B4DA5023CF58EC003E6C25 /* lolFight2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B4DA6023CF58EC003E6C25 /* Build configuration list for PBXNativeTarget "lolFight2UITests" */;
+			buildPhases = (
+				15B4DA4D23CF58EC003E6C25 /* Sources */,
+				15B4DA4E23CF58EC003E6C25 /* Frameworks */,
+				15B4DA4F23CF58EC003E6C25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15B4DA5323CF58EC003E6C25 /* PBXTargetDependency */,
+			);
+			name = lolFight2UITests;
+			productName = lolFight2UITests;
+			productReference = 15B4DA5123CF58EC003E6C25 /* lolFight2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15B4DA2823CF58EB003E6C25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Larissa Diniz ";
+				TargetAttributes = {
+					15B4DA2F23CF58EB003E6C25 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					15B4DA4523CF58EC003E6C25 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 15B4DA2F23CF58EB003E6C25;
+					};
+					15B4DA5023CF58EC003E6C25 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 15B4DA2F23CF58EB003E6C25;
+					};
+				};
+			};
+			buildConfigurationList = 15B4DA2B23CF58EB003E6C25 /* Build configuration list for PBXProject "lolFight2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15B4DA2723CF58EB003E6C25;
+			productRefGroup = 15B4DA3123CF58EB003E6C25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15B4DA2F23CF58EB003E6C25 /* lolFight2 */,
+				15B4DA4523CF58EC003E6C25 /* lolFight2Tests */,
+				15B4DA5023CF58EC003E6C25 /* lolFight2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15B4DA2E23CF58EB003E6C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B4DA4023CF58EC003E6C25 /* LaunchScreen.storyboard in Resources */,
+				15B4DA3D23CF58EC003E6C25 /* Assets.xcassets in Resources */,
+				15B4DA3B23CF58EB003E6C25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B4DA4423CF58EC003E6C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B4DA4F23CF58EC003E6C25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15B4DA2C23CF58EB003E6C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B4DA6623CF5AB3003E6C25 /* Mage.swift in Sources */,
+				15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */,
+				15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */,
+				15B4DA6423CF592C003E6C25 /* Champion.swift in Sources */,
+				159FB7F923D0C0B9008D4126 /* Shooter.swift in Sources */,
+				15B4DA3823CF58EB003E6C25 /* ViewController.swift in Sources */,
+				15B4DA3423CF58EB003E6C25 /* AppDelegate.swift in Sources */,
+				15B4DA3623CF58EB003E6C25 /* SceneDelegate.swift in Sources */,
+				159FB7FB23D0C553008D4126 /* Support.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B4DA4223CF58EC003E6C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B4DA4B23CF58EC003E6C25 /* lolFight2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15B4DA4D23CF58EC003E6C25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B4DA5623CF58EC003E6C25 /* lolFight2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15B4DA4823CF58EC003E6C25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15B4DA2F23CF58EB003E6C25 /* lolFight2 */;
+			targetProxy = 15B4DA4723CF58EC003E6C25 /* PBXContainerItemProxy */;
+		};
+		15B4DA5323CF58EC003E6C25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15B4DA2F23CF58EB003E6C25 /* lolFight2 */;
+			targetProxy = 15B4DA5223CF58EC003E6C25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15B4DA3923CF58EB003E6C25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B4DA3A23CF58EB003E6C25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15B4DA3E23CF58EC003E6C25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15B4DA3F23CF58EC003E6C25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15B4DA5823CF58EC003E6C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15B4DA5923CF58EC003E6C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15B4DA5B23CF58EC003E6C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9FU5BS8Y2;
+				INFOPLIST_FILE = lolFight2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = involves.lolFight2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15B4DA5C23CF58EC003E6C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9FU5BS8Y2;
+				INFOPLIST_FILE = lolFight2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = involves.lolFight2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15B4DA5E23CF58EC003E6C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9FU5BS8Y2;
+				INFOPLIST_FILE = lolFight2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = involves.lolFight2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lolFight2.app/lolFight2";
+			};
+			name = Debug;
+		};
+		15B4DA5F23CF58EC003E6C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9FU5BS8Y2;
+				INFOPLIST_FILE = lolFight2Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = involves.lolFight2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lolFight2.app/lolFight2";
+			};
+			name = Release;
+		};
+		15B4DA6123CF58EC003E6C25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9FU5BS8Y2;
+				INFOPLIST_FILE = lolFight2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = involves.lolFight2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lolFight2;
+			};
+			name = Debug;
+		};
+		15B4DA6223CF58EC003E6C25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J9FU5BS8Y2;
+				INFOPLIST_FILE = lolFight2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = involves.lolFight2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = lolFight2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15B4DA2B23CF58EB003E6C25 /* Build configuration list for PBXProject "lolFight2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B4DA5823CF58EC003E6C25 /* Debug */,
+				15B4DA5923CF58EC003E6C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B4DA5A23CF58EC003E6C25 /* Build configuration list for PBXNativeTarget "lolFight2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B4DA5B23CF58EC003E6C25 /* Debug */,
+				15B4DA5C23CF58EC003E6C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B4DA5D23CF58EC003E6C25 /* Build configuration list for PBXNativeTarget "lolFight2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B4DA5E23CF58EC003E6C25 /* Debug */,
+				15B4DA5F23CF58EC003E6C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15B4DA6023CF58EC003E6C25 /* Build configuration list for PBXNativeTarget "lolFight2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B4DA6123CF58EC003E6C25 /* Debug */,
+				15B4DA6223CF58EC003E6C25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15B4DA2823CF58EB003E6C25 /* Project object */;
+}
