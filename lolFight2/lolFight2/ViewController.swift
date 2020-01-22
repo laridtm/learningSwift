@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     let lux = Mage(name: "Lux", life: 100, kills: 0, deaths: 0)
     let garen = Tank(name: "Garen", life: 100, kills: 0, deaths: 0)
     let missFortune = Shooter(name: "Miss Fortune", life: 100, kills: 0, deaths: 0)

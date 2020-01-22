@@ -21,6 +21,7 @@
 		15B4DA6623CF5AB3003E6C25 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6523CF5AB3003E6C25 /* Mage.swift */; };
 		15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6723CF7FEE003E6C25 /* Tank.swift */; };
 		15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B4DA6923CF8111003E6C25 /* Fight.swift */; };
+		15BC3FD423D8C88C00CC3DEE /* ChooseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC3FD323D8C88C00CC3DEE /* ChooseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		15B4DA6523CF5AB3003E6C25 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
 		15B4DA6723CF7FEE003E6C25 /* Tank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
 		15B4DA6923CF8111003E6C25 /* Fight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fight.swift; sourceTree = "<group>"; };
+		15BC3FD323D8C88C00CC3DEE /* ChooseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				15B4DA6723CF7FEE003E6C25 /* Tank.swift */,
 				159FB7F823D0C0B9008D4126 /* Shooter.swift */,
 				159FB7FA23D0C553008D4126 /* Support.swift */,
+				15BC3FD323D8C88C00CC3DEE /* ChooseController.swift */,
 			);
 			path = lolFight2;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				15B4DA6A23CF8111003E6C25 /* Fight.swift in Sources */,
 				15B4DA6823CF7FEE003E6C25 /* Tank.swift in Sources */,
 				15B4DA6423CF592C003E6C25 /* Champion.swift in Sources */,
+				15BC3FD423D8C88C00CC3DEE /* ChooseController.swift in Sources */,
 				159FB7F923D0C0B9008D4126 /* Shooter.swift in Sources */,
 				15B4DA3823CF58EB003E6C25 /* ViewController.swift in Sources */,
 				15B4DA3423CF58EB003E6C25 /* AppDelegate.swift in Sources */,
