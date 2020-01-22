@@ -106,7 +106,7 @@
                                 <rect key="frame" x="398" y="75" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <size key="titleShadowOffset" width="-1" height="-1"/>
-                                <state key="normal" title="Tresh" backgroundImage="button">
+                                <state key="normal" title="Taric" backgroundImage="button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
@@ -130,14 +130,6 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-eI-tSD">
-                                <rect key="frame" x="52" y="31" width="224" height="353"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5x0-R0-Tch">
-                                <rect key="frame" x="648" y="31" width="224" height="353"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfA-zF-RDA">
                                 <rect key="frame" x="378" y="368" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -151,6 +143,14 @@
                                     <segue destination="CFk-do-vPs" kind="show" id="ZNG-oD-wK0"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="missFortune2" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-eI-tSD">
+                                <rect key="frame" x="18" y="31" width="224" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="taric" translatesAutoresizingMaskIntoConstraints="NO" id="5x0-R0-Tch">
+                                <rect key="frame" x="672" y="20" width="224" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VC2-i9-QQP"/>
@@ -198,6 +198,8 @@
         <image name="button" width="600" height="150"/>
         <image name="derrota2" width="1280" height="720"/>
         <image name="lol" width="1054" height="490"/>
+        <image name="missFortune2" width="340" height="467"/>
+        <image name="taric" width="295" height="480"/>
         <image name="vitoria" width="976" height="430"/>
     </resources>
 </document>
