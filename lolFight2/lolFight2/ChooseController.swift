@@ -10,8 +10,8 @@ import UIKit
 
 class ChooseController: UIViewController {
 
-    @IBOutlet weak var champion1: UIImageView!
-    @IBOutlet weak var champion2: UIImageView!
+    @IBOutlet weak var champion1Image: UIImageView!
+    @IBOutlet weak var champion2Image: UIImageView!
     
     var champion1Winner : Bool = true
     
@@ -21,19 +21,19 @@ class ChooseController: UIViewController {
     let taric = Support(name: "Taric", life: 100, kills: 0, deaths: 0)
     
     @IBAction func Lux(_ sender: UIButton) {
-        champion1.image = UIImage(named: "lux3")
+        champion1Image.image = UIImage(named: "lux3")
     }
     
     @IBAction func Taric(_ sender: UIButton) {
-        champion1.image = UIImage(named: "taric")
+        champion1Image.image = UIImage(named: "taric")
     }
     
     @IBAction func Garen(_ sender: UIButton) {
-        champion1.image = UIImage(named: "garen4")
+        champion1Image.image = UIImage(named: "garen4")
     }
     
     @IBAction func Missfortune(_ sender: UIButton) {
-        champion1.image = UIImage(named: "missFortune2")
+        champion1Image.image = UIImage(named: "missFortune2")
     }
     
     @IBAction func Attack(_ sender: UIButton) {
@@ -63,13 +63,13 @@ class ChooseController: UIViewController {
         let random = Int.random(in: 0...3)
         
         if random == 0 {
-            champion2.image = UIImage(named: "lux3")
+            champion2Image.image = UIImage(named: "lux3")
         } else if random == 1 {
-            champion2.image = UIImage(named: "taric")
+            champion2Image.image = UIImage(named: "taric")
         } else if random == 2 {
-            champion2.image = UIImage(named: "garen4")
+            champion2Image.image = UIImage(named: "garen4")
         } else if random == 3 {
-            champion2.image = UIImage(named: "missFortune2")
+            champion2Image.image = UIImage(named: "missFortune2")
         }
              
           

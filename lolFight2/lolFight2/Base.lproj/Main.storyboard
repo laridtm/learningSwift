@@ -139,8 +139,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="8oU-1l-3ur"/>
                     <connections>
-                        <outlet property="champion1" destination="Bfl-eI-tSD" id="xMa-5X-NVd"/>
-                        <outlet property="champion2" destination="5x0-R0-Tch" id="KQh-jO-pD3"/>
+                        <outlet property="champion1Image" destination="Bfl-eI-tSD" id="6Tf-8m-0vQ"/>
+                        <outlet property="champion2Image" destination="5x0-R0-Tch" id="Onm-kP-36E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlk-Rc-tos" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
