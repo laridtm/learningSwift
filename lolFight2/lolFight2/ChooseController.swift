@@ -45,10 +45,10 @@ class ChooseController: UIViewController {
         if segue.identifier == "ShowResultSegue" {
         
             let result = segue.destination as! ShowResultController
-            if champion1Winner == true {
-                result.imageResult.image = UIImage(named: "vitoria")
+            if champion1Winner {
+                result.imageName = "vitoria"
             } else {
-                result.imageResult.image = UIImage(named: "derrota")
+                result.imageName = "derrota"
             }
         }
     }

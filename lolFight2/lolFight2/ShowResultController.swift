@@ -12,12 +12,14 @@ class ShowResultController: UIViewController {
 
     @IBOutlet weak var imageResult: UIImageView!
     
+    var imageName: String?
+    
    // let resultFight = ChooseController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        imageResult.image = UIImage(named: imageName!)
         
         
         // Do any additional setup after loading the view.
