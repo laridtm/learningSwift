@@ -12,11 +12,14 @@ class ShowResultController: UIViewController {
 
     @IBOutlet weak var imageResult: UIImageView!
     
-    let resultFight = ChooseController()
+   // let resultFight = ChooseController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //resultFight.Attack(<#T##sender: UIButton##UIButton#>)
+        
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

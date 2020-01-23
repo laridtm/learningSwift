@@ -13,6 +13,8 @@ class ChooseController: UIViewController {
     @IBOutlet weak var champion1: UIImageView!
     @IBOutlet weak var champion2: UIImageView!
     
+    var champion1Winner : Bool = true
+    
     let lux = Mage(name: "Lux", life: 100, kills: 0, deaths: 0)
     let garen = Tank(name: "Garen", life: 100, kills: 0, deaths: 0)
     let missFortune = Shooter(name: "Miss Fortune", life: 100, kills: 0, deaths: 0)
@@ -36,16 +38,25 @@ class ChooseController: UIViewController {
     
     @IBAction func Attack(_ sender: UIButton) {
         let fight1 = Fight.init(champion1: lux, champion2: garen)
-        let champion1Winner = fight1.fight()
-        
-         
-        
+        champion1Winner = fight1.fight()
     }
     
-    func prepare(for segue: UIStoryboardSegue, sender: Any) {
-        guard let showResultController = segue.destination as? ShowResultController else {return}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowResultSegue" {
+        
+            let result = segue.destination as! ShowResultController
+            if champion1Winner == true {
+                result.imageResult.image = UIImage(named: "vitoria")
+            } else {
+                result.imageResult.image = UIImage(named: "derrota")
+            }
+        }
     }
     
+//    func prepare(for segue: "ShowResultSegue", sender: Any?) {
+//        let result = segue.destination as? ShowResultController
+//    }
+//
     override func viewDidLoad() {
         super.viewDidLoad()
         
