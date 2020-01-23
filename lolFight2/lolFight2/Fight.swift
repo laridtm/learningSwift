@@ -18,7 +18,7 @@ class Fight {
         self.champion2 = champion2
     }
     
-    func fight() {
+    func fight() -> Bool {
         
         while champion1.life > 0 && champion2.life > 0 {
             champion1.attack(champion2: &champion2)
@@ -33,10 +33,16 @@ class Fight {
              champion1.kills += 1
              champion2.deaths += 1
              print("\nVictory: \(champion1.name) \nDefeat: \(champion2.name)\n")
+            
+            return true
+            
         } else {
              champion2.kills += 1
              champion2.deaths += 1
              print("Victory: \(champion2.name) \nDefeat: \(champion1.name)\n")
+            
+            return false
+            
         }
     }
     

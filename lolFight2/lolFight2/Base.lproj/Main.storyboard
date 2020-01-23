@@ -45,38 +45,6 @@
             </objects>
             <point key="canvasLocation" x="132.58928571428572" y="137.68115942028987"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="OOf-Rb-Fcd">
-            <objects>
-                <viewController id="Xuy-zj-P4Z" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5di-53-0sX">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="derrota2" translatesAutoresizingMaskIntoConstraints="NO" id="rTF-3Y-SFN">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kg-Du-IOA">
-                                <rect key="frame" x="378" y="322" width="140" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <size key="titleShadowOffset" width="-1" height="-1"/>
-                                <state key="normal" title="OK" backgroundImage="button">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="29u-78-Sby"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Rk-0d-1Qi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C5d-m7-swV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="132.58928571428572" y="928.98550724637687"/>
-        </scene>
         <!--Choose Controller-->
         <scene sceneID="HA9-r2-Akc">
             <objects>
@@ -153,7 +121,8 @@
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CFk-do-vPs" kind="show" id="ZNG-oD-wK0"/>
+                                    <action selector="Attack:" destination="LFB-PT-d77" eventType="touchUpInside" id="es5-ZX-96B"/>
+                                    <segue destination="CFk-do-vPs" kind="show" id="O41-2L-AHf"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bfl-eI-tSD">
@@ -179,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="813.61607142857144" y="137.68115942028987"/>
         </scene>
-        <!--View Controller-->
+        <!--Show Result Controller-->
         <scene sceneID="tlf-P6-XiR">
             <objects>
-                <viewController id="CFk-do-vPs" sceneMemberID="viewController">
+                <viewController id="CFk-do-vPs" customClass="ShowResultController" customModule="lolFight2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C2A-fH-x11">
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,6 +175,9 @@
                         <viewLayoutGuide key="safeArea" id="8Tk-vP-Efa"/>
                     </view>
                     <navigationItem key="navigationItem" id="cvV-1s-agH"/>
+                    <connections>
+                        <outlet property="imageResult" destination="UJU-Tb-MKe" id="dOD-yp-a6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JM2-o9-XLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +186,6 @@
     </scenes>
     <resources>
         <image name="button" width="600" height="150"/>
-        <image name="derrota2" width="1280" height="720"/>
         <image name="lol" width="1054" height="490"/>
         <image name="vitoria" width="976" height="430"/>
     </resources>

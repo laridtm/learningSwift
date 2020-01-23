@@ -15,7 +15,7 @@ protocol Champion {
     var deaths: Int {get set}
     var damage: Int {get set}
     
-    func attack(champion2: inout Champion)
+    func attack(champion2: inout Champion) 
     func defend() -> Int
     func history()
 }

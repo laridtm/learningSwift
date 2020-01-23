@@ -11,6 +11,12 @@ import UIKit
 class ChooseController: UIViewController {
 
     @IBOutlet weak var champion1: UIImageView!
+    @IBOutlet weak var champion2: UIImageView!
+    
+    let lux = Mage(name: "Lux", life: 100, kills: 0, deaths: 0)
+    let garen = Tank(name: "Garen", life: 100, kills: 0, deaths: 0)
+    let missFortune = Shooter(name: "Miss Fortune", life: 100, kills: 0, deaths: 0)
+    let taric = Support(name: "Taric", life: 100, kills: 0, deaths: 0)
     
     @IBAction func Lux(_ sender: UIButton) {
         champion1.image = UIImage(named: "lux3")
@@ -28,9 +34,18 @@ class ChooseController: UIViewController {
         champion1.image = UIImage(named: "missFortune2")
     }
     
-    @IBOutlet weak var champion2: UIImageView!
+    @IBAction func Attack(_ sender: UIButton) {
+        let fight1 = Fight.init(champion1: lux, champion2: garen)
+        let champion1Winner = fight1.fight()
+        
+         
+        
+    }
     
-
+    func prepare(for segue: UIStoryboardSegue, sender: Any) {
+        guard let showResultController = segue.destination as? ShowResultController else {return}
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,7 +60,9 @@ class ChooseController: UIViewController {
         } else if random == 3 {
             champion2.image = UIImage(named: "missFortune2")
         }
-
+             
+          
+        
         // Do any additional setup after loading the view.
     }
     
