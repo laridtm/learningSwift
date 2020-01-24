@@ -54,7 +54,7 @@ class ChooseController: UIViewController {
             if champion1Winner {
                 result.imageName = "vitoria"
             } else {
-                result.imageName = "derrota"
+                result.imageName = "derrota2"
             }
         }
     }
