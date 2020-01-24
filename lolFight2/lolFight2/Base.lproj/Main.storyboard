@@ -156,7 +156,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vitoria" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-Tb-MKe">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="derrota2" translatesAutoresizingMaskIntoConstraints="NO" id="UJU-Tb-MKe">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -186,7 +186,7 @@
     </scenes>
     <resources>
         <image name="button" width="600" height="150"/>
+        <image name="derrota2" width="1280" height="720"/>
         <image name="lol" width="1054" height="490"/>
-        <image name="vitoria" width="976" height="430"/>
     </resources>
 </document>
