@@ -43,7 +43,11 @@ class ChooseController: UIViewController {
     }
     
     @IBAction func Attack(_ sender: UIButton) {
-        let fight1 = Fight.init(champion1: myChampion!, champion2: boot!)
+        
+        guard let champion = myChampion, let boot = boot else { return
+        }
+        
+        let fight1 = Fight(champion1: champion, champion2: boot)
         champion1Winner = fight1.fight()
     }
     
