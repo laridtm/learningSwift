@@ -13,9 +13,9 @@ class ChooseController: UIViewController {
     @IBOutlet weak var champion1Image: UIImageView!
     @IBOutlet weak var champion2Image: UIImageView!
     
-    var champion1Winner : Bool = false
-    var boot : Champion?
-    var myChampion : Champion?
+    var champion1Winner: Bool = false
+    var boot: Champion?
+    var myChampion: Champion?
     
     let lux = Mage(name: "Lux", life: 100, kills: 0, deaths: 0)
     let garen = Tank(name: "Garen", life: 100, kills: 0, deaths: 0)
