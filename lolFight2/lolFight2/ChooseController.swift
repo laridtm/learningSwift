@@ -50,7 +50,10 @@ class ChooseController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowResultSegue" {
         
-            let result = segue.destination as! ShowResultController
+            guard let result = segue.destination as? ShowResultController else {
+                return
+            }
+            
             if champion1Winner {
                 result.imageName = "vitoria"
             } else {
