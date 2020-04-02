@@ -41,6 +41,26 @@ class lolFight2Tests: XCTestCase {
         
     }
     
+    func testCheckIfTheEnemyIsTakingDamageCorrectly() {
+        
+        var champion1: Champion!
+        var champion2: Champion!
+        
+        champion1 = lux
+        champion2 = garen
+        
+        var lifeChampion2 = champion2.life
+        
+        champion1.attack(champion2: &champion2)
+        
+        lifeChampion2 = lifeChampion2 - champion1.damage + champion2.defend()
+        
+//        lifeChampion2 -= champion1.damage - champion2.defend()
+        
+        XCTAssertEqual(lifeChampion2, champion2.life)
+        
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
