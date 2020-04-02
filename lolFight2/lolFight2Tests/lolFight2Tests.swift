@@ -11,10 +11,10 @@ import XCTest
 
 class lolFight2Tests: XCTestCase {
     
-    var lux: Champion!
-    var garen: Champion!
-    var missFortune: Champion!
-    var taric: Champion!
+    var lux: Mage!
+    var garen: Tank!
+    var missFortune: Shooter!
+    var taric: Support!
     
     override func setUp() {
         super.setUp()
@@ -30,6 +30,15 @@ class lolFight2Tests: XCTestCase {
         garen = nil
         missFortune = nil
         taric = nil
+    }
+    
+    func testCheckIfTheDefenseOfTheChampionMatchesHisClass() {
+        
+        XCTAssertEqual(lux.defense, 30)
+        XCTAssertEqual(garen.armor, 60)
+        XCTAssertEqual(missFortune.defense, 30)
+        XCTAssertEqual(taric.shield, 40)
+        
     }
     
     func testExample() {
