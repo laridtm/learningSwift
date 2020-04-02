@@ -55,9 +55,18 @@ class lolFight2Tests: XCTestCase {
         
         lifeChampion2 = lifeChampion2 - champion1.damage + champion2.defend()
         
-//        lifeChampion2 -= champion1.damage - champion2.defend()
+        //        lifeChampion2 -= champion1.damage - champion2.defend()
         
         XCTAssertEqual(lifeChampion2, champion2.life)
+        
+    }
+    
+    func testCheckIfTheDamageOfTheChampionMatchesHisClass() {
+        
+        XCTAssertEqual(lux.spell, 70)
+        XCTAssertEqual(garen.attack, 40)
+        XCTAssertEqual(missFortune.ultimate, 95)
+        XCTAssertEqual(taric.attack, 40)
         
     }
     
