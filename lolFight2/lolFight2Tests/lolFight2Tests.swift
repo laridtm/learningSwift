@@ -34,10 +34,15 @@ class lolFight2Tests: XCTestCase {
     
     func testCheckIfTheDefenseOfTheChampionMatchesHisClass() {
         
-        XCTAssertEqual(lux.defense, 30)
-        XCTAssertEqual(garen.armor, 60)
-        XCTAssertEqual(missFortune.defense, 30)
-        XCTAssertEqual(taric.shield, 40)
+        let defenseMage = lux.defend()
+        let defenseTank = garen.defend()
+        let defenseShooter = missFortune.defend()
+        let defenseSupport = taric.defend()
+        
+        XCTAssertEqual(defenseMage, 30)
+        XCTAssertEqual(defenseTank, 60)
+        XCTAssertEqual(defenseShooter, 30)
+        XCTAssertEqual(defenseSupport, 40)
         
     }
     
