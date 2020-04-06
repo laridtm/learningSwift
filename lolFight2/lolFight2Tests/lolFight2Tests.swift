@@ -55,8 +55,6 @@ class lolFight2Tests: XCTestCase {
         
         lifeChampion2 = lifeChampion2 - champion1.damage + champion2.defend()
         
-        //        lifeChampion2 -= champion1.damage - champion2.defend()
-        
         XCTAssertEqual(lifeChampion2, champion2.life)
         
     }
@@ -70,16 +68,18 @@ class lolFight2Tests: XCTestCase {
         
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testFightToTheDeath() {
+        
+        var champion1: Champion!
+        var champion2: Champion!
+        
+        champion1 = lux
+        champion2 = garen
+        
+        let fight = Fight(champion1: champion1, champion2: champion2)
+        fight.fight()
+        
+        XCTAssertTrue(champion1.life <= 0 || champion2.life <= 0)
     }
     
 }
