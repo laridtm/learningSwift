@@ -29,6 +29,8 @@
 
 * Link do Raywenderlich: https://www.raywenderlich.com
 
+![Bulls Eye](images/bullsEye.png)
+
 ### Projeto 4: lolFight
 
 * Um jogo desenvolvido por mim e pelo Vitor Costa. Também um jogo simples, com a intenção de exercitar o que aprendemos até o momento.
@@ -36,4 +38,6 @@
 * Trata-se da simulação de uma luta entre dois campeões do jogo League Of Legends.
 
 * Com ele aprendemos mais sobre AutoLayout.
+
+![LOL Fight](images/lolFight.png)
   
