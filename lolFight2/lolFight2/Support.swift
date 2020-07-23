@@ -38,6 +38,7 @@ class Support: Champion {
     
     func history() {
         print("Campeão: \(name), abates: \(kills), mortes: \(deaths).")
+        //return
     }
     
     
